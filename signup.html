@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>회원가입</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Noto+Serif+Telugu:wght@100&family=Sigmar&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1>signup</h1>
+    <form id="signup-form">
+      <label for="username">사용자 이름:</label>
+      <input type="text" id="username" name="username">
+      <br>
+      <label for="password">비밀번호:</label>
+      <input type="password" id="password" name="password">
+      <br>
+      <button type="submit">가입하기</button>
+      <a href='index.html'>로그인창</a>
+    </form>
+
+    <script>
+      const form = document.getElementById('signup-form');
+
+      form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        localStorage.setItem('username', username);
+        localStorage.setItem('password', password);
+        
+        
+        if(username =="" || password ==""){
+          alert("입력안하면 상록이가 키스한다...♥");
+          return;
+        
+        }
+        else{
+        alert('회원가입이 완료되었습니다!');
+        window.location.replace('index.html');
+        }
+      });
+    </script>
+  </body>
+</html>

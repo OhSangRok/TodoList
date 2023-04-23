@@ -1,0 +1,75 @@
+body {
+    background-color: #F0FFF0;
+  }
+  
+  h1 {
+    color: #008000;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Cute Font', cursive;
+    font-family: 'Noto Serif Telugu', serif;
+    font-family: 'Sigmar', cursive;
+  }
+  
+  
+  form {
+    width: 300px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #CCCCCC;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    color: #008000;
+    font-weight: bold;
+    font-family: 'Cute Font', cursive;
+    font-family: 'Noto Serif Telugu', serif;
+    font-family: 'Sigmar', cursive;
+  }
+  
+  input[type="text"], input[type="password"] {
+    width: 92%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #CCCCCC;
+    font-family: 'Cute Font', cursive;
+    font-family: 'Noto Serif Telugu', serif;
+    font-family: 'Sigmar', cursive;
+  }
+  
+  button[type="submit"] {
+    background-color: #008000;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #006400;
+  }
+  
+  a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #008000;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
